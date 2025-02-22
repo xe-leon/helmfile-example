@@ -4,10 +4,12 @@ environments:
 releases:
   - name: nginx-blue
     namespace: nginx1
+    createNamespace: true
     chart: charts/nginx
     installed: true
 
   - name: nginx-green
     namespace: nginx2
+    createNamespace: true
     chart: charts/nginx
     installed: true
