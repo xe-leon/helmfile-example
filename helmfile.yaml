@@ -9,6 +9,8 @@ releases:
     installed: true
     values:
       - cluster: {{ .Environment.Name }}
+    secrets:
+      - secrets/nginx.yaml
 
   - name: nginx-green
     namespace: nginx2
@@ -17,3 +19,5 @@ releases:
     installed: true
     values:
       - cluster: {{ .Environment.Name }}
+    secrets:
+      - secrets/nginx.yaml

@@ -4,6 +4,7 @@ metadata:
   name: nginx-{{ .Release.Name }}
   labels:
     cluster: {{ .Values.cluster }}
+    testsecret: {{ .Values.testsecret }}
 spec:
   replicas: 1
   selector:
