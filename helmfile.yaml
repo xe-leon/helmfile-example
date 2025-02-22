@@ -7,9 +7,13 @@ releases:
     forceNamespace: "nginx1"
     chart: charts/nginx
     installed: true
+    values:
+      - cluster: {{ .Environment.Name }}
 
   - name: nginx-green
     namespace: nginx2
     forceNamespace: "nginx2"
     chart: charts/nginx
     installed: true
+    values:
+      - cluster: {{ .Environment.Name }}
