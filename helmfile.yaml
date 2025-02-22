@@ -1,0 +1,13 @@
+environments:
+  onprem.production: {}
+
+releases:
+  - name: nginx
+    namespace: nginx1
+    chart: charts/nginx
+    installed: true
+
+  - name: nginx
+    namespace: nginx2
+    chart: charts/nginx
+    installed: true
