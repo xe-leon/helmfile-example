@@ -2,12 +2,12 @@ environments:
   onprem.production: {}
 
 releases:
-  - name: nginx
+  - name: nginx-blue
     namespace: nginx1
     chart: charts/nginx
     installed: true
 
-  - name: nginx
+  - name: nginx-green
     namespace: nginx2
     chart: charts/nginx
     installed: true
